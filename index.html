@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="document html profile practice">
+        <title>html basics profile page</title>
+        <style>
+            .menu{
+                list-style: none;
+            }
+            .menu_opcion{
+                display: inline-block;
+                margin: 50px;
+                align-items: center;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            label{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li class="menu_opcion"><a href="#about-me">About me</a></li>
+                    <li class="menu_opcion"><a href="#skills_tools">Skills and Tools</a></li>
+                    <li class="menu_opcion"><a href="#contact-me">Contac me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Nasdig Jordan Ortiz Gutierrez</h1>
+            <figure>
+                <img src="Dop Goat.jpeg" alt="imagen de referencia de perfil" style="border-radius: 50%; 
+                width: 200px; height:200px ;">
+                <figcaption>Vive la vida y no dejes que la vida te viva</figcaption>
+            </figure>
+            <section id="about-me">
+                <h2>About me</h2>
+                <p>joven peruano autodidacta con conocimiento sobre redes manejo de datos y manejo de blender</p>
+            </section>
+            <section id="skills_tools">
+                <h2>Skills and Tools</h2>
+                <ol>
+                    <li>lenguajes:
+                        <ul>
+                            <li>python</li>
+                            <li>JavaScrip</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </li>
+                        
+                    <li>Tools:
+                        <ul>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                            <li>Github</li>
+                            <li>VS Code</li>
+                            <li>pandas</li>
+                            <li>Blender</li>
+                            <li>Git</li>
+                        </ul>
+                    </li>
+                        
+                </ol>
+            </section>
+        </main>
+        <footer>
+            <section id="contact-me">
+                <h2>Contact me:</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Company: </legend>
+
+                        <label for="company" >Company: </label>
+                        <input type="text" id="company" name="company"  required>
+
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" placeholder="@email.com" required>
+
+                        <label for="message">Message: </label>
+                        <textarea name="message" id="message"></textarea>
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Collaboration:</legend>
+
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" required>
+
+                        <label for="description">Description: </label>
+                        <textarea name="description" id="description" placeholder="Explain what the project is about"></textarea>
+
+                    </fieldset>
+                    
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </footer>
+    </body>
+</html>
